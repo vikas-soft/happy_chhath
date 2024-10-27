@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Chhath Poja</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            background: linear-gradient(to top, #87CEEB, #FFDE00);
+            overflow: hidden;
+            font-family: 'Times New Roman', Times, serif;
+        }
+
+        h1 {
+            font-size: 3rem;
+            color: blue;
+            text-align: center;
+        }
+
+        
+
+        .sun {
+            width: 100px;
+            height: 100px;
+            background: radial-gradient(circle, #FFDD00 30%, #FFAA00);
+            border-radius: 50%;
+            position: relative;
+            animation: rise 5s linear infinite;
+        }
+
+        @keyframes rise {
+            0% {
+                transform: translateY(50px);
+            }
+            50% {
+                transform: translateY(-90px);
+            }
+            100% {
+                transform: translateY(50px);
+            }
+        }
+
+        .rays {
+            position: absolute;
+            top: -30px;
+            left: -30px;
+            width: 160px;
+            height: 160px;
+            border-radius: 50%;
+            background: transparent;
+            box-shadow: 0 0 30px 25px rgba(255, 221, 0, 0.8) inset;
+            animation: rotate 5s linear infinite;
+        }
+
+        @keyframes rotate {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+
+        
+
+        @keyframes wave {
+            0% { transform: translateX(10); }
+        
+            50% { transform: translateX(-10px); }
+            75% { transform: translatey(3px); }
+            100% { transform: translateX(20); }
+            
+        }
+        
+        h1 {
+            font-size: 60px;
+            animation: glow 2.6s infinite alternate;
+            text-shadow: 0 0 5px #fff, 0 0 10px #00d9ff, 0 0 15px #00d9ff, 0 0 20px #00d9ff;
+        }
+        @keyframes glow {
+            from {
+                text-shadow: 0 0 5px #fff, 0 0 10px rgb(0, 255, 38);
+            }
+            to {
+                text-shadow: 1 1 15px #fff, 1 1 30px #f6ff00;
+            }
+        }
+    </style>
+</head>
+<body>
+    
+    <div class="sun">
+        <div class="rays"></div>
+    </div>
+    <h1 class="typing">HAPPY CHHATH POOJA</h1>
+    <h3>2024</h3>
+    <p>"Chhath Puja is a celebration of faith, gratitude, and the life-giving sun. May the rays of the sun purify our hearts and bless us with prosperity, health, and happiness. Happy Chhath Puja!" 🌞🌅
+    </p>
+   <footer>Created By Vikas</footer>
+</body>
+</html>
